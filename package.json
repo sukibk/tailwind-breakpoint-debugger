@@ -1,0 +1,46 @@
+{
+  "name": "tailwind-breakpoint-debugger",
+  "version": "1.0.2",
+  "description": "A lightweight React component for displaying the current Tailwind CSS screen breakpoint (e.g., sm, md, lg, xl) during development. Perfect for responsive design debugging in Next.js and React apps",
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "react",
+    "nextjs",
+    "breakpoint",
+    "debugger",
+    "responsive",
+    "screen size",
+    "tailwind breakpoints",
+    "devtool",
+    "tailwind helper",
+    "tailwind ui",
+    "react component",
+    "debug tool"
+  ],
+  "license": "MIT",
+  "author": "Marko Sudar",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.13",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.17",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "tailwindcss": "^3 || ^4",
+    "react-dom": "^19.0.0"
+  }
+}
