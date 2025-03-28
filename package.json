@@ -37,5 +37,12 @@
   },
   "dependencies": {
     "rollup": "^4.37.0"
-  }
+  },
+  "keywords": [
+    "tailwind",
+    "next.js",
+    "react",
+    "breakpoint",
+    "debugger"
+  ]
 }

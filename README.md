@@ -169,3 +169,9 @@ In case of problems with code:
 - Make a pull request on GitHub
 - Shoot me an e-mail with the subject "Tailwind Breakpoint Debugger is Bugggered!" xD
 
+
+Thanks for using Tailwind Breakpoint Debugger! 🚀
+
+---
+Keywords: tailwind, next.js, react, breakpoint, debugger, tailwindcss, vite, tailwind v4, tailwind v3
+
