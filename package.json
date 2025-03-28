@@ -1,9 +1,12 @@
 {
   "name": "tailwind-breakpoint-debugger",
   "version": "1.0.10",
-  "description": "",
-  "license": "ISC",
-  "author": "",
+  "description": "A lightweight React component to help developers visualize and debug Tailwind CSS breakpoints during development.",
+  "license": "MIT",
+  "author": "Marko Sudar (@sukibk)",
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/sukibk/tailwind-breakpoint-debugger"},
   "type": "commonjs",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
