@@ -1,6 +1,6 @@
 {
   "name": "tailwind-breakpoint-debugger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight React component for displaying the current Tailwind CSS screen breakpoint (e.g., sm, md, lg, xl) during development",
   "type": "module",
   "main": "./dist/index.js",
