@@ -1,3 +1,2 @@
-import BreakpointDebugger from "./BreakpointDebugger";
-export { BreakpointDebugger };
-export default BreakpointDebugger;
+export { default as BreakpointDebugger } from "./BreakpointDebugger";
+export * from "./BreakpointDebugger";

@@ -10,14 +10,19 @@ const BreakpointDebugger: React.FC<BreakpointDebuggerProps> = ({
   breakpoints = defaultBreakpoints,
 }) => {
   const [mounted, setMounted] = useState(false);
+  const [isDevelopment, setIsDevelopment] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-  }, []);
 
-  // More explicit development mode check
-  const isDevelopment =
-    typeof window !== "undefined" && process.env.NODE_ENV === "development";
+    // Check for development mode in Next.js
+    setIsDevelopment(
+      process.env.NODE_ENV === "development" ||
+        (typeof window !== "undefined" &&
+          (window.location.hostname === "localhost" ||
+            window.location.hostname === "127.0.0.1")),
+    );
+  }, []);
 
   if (!mounted || !isDevelopment) return null;
 

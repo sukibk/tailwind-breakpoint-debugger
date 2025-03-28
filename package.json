@@ -1,7 +1,6 @@
 {
   "name": "tailwind-breakpoint-debugger",
-  "version": "1.0.4",
-  "description": "A lightweight React component for displaying the current Tailwind CSS screen breakpoint (e.g., sm, md, lg, xl) during development",
+  "version": "1.0.3",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -10,45 +9,42 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
     }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist"
   },
   "files": [
     "dist"
   ],
-  "keywords": [
-    "tailwind",
-    "tailwindcss",
-    "react",
-    "nextjs",
-    "breakpoint",
-    "debugger",
-    "responsive"
-  ],
-  "license": "MIT",
-  "author": "Marko Sudar",
-  "scripts": {
-    "build": "tsup",
-    "prepublishOnly": "npm run build",
-    "test": "echo \"No tests specified\" && exit 0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.14.2",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
-    "tsup": "^8.0.2",
-    "typescript": "^5.4.5"
-  },
   "peerDependencies": {
+    "next": "^13.0.0 || ^14.0.0",
     "react": "^18.2.0 || ^19.0.0",
     "react-dom": "^18.2.0 || ^19.0.0",
     "tailwindcss": "^3.0.0 || ^4.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yourusername/tailwind-breakpoint-debugger"
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "next": "^14.1.0",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "tailwind",
+    "next.js",
+    "react",
+    "breakpoint",
+    "debugger"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "tsup": "^8.4.0"
   }
 }

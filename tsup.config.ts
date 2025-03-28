@@ -10,8 +10,8 @@ export default defineConfig({
   minify: true,
   splitting: false,
   treeshake: true,
-  target: "es2020", // Ensures broader compatibility
-  bundle: true, // Explicitly bundle the package
-  outDir: "dist", // Explicitly set output directory
-  platform: "browser", // Specifies browser targeting
+  target: "es2020",
+  bundle: true,
+  outDir: "dist",
+  platform: "browser",
 });
