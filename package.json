@@ -1,4 +1,11 @@
 {
+  "name": "tailwind-breakpoint-debugger",
+  "version": "1.0.3",
+  "description": "A lightweight React component for displaying the current Tailwind CSS screen breakpoint (e.g., sm, md, lg, xl) during development",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -6,9 +13,9 @@
       "require": "./dist/index.js"
     }
   },
-  "name": "tailwind-breakpoint-debugger",
-  "version": "1.0.3",
-  "description": "A lightweight React component for displaying the current Tailwind CSS screen breakpoint (e.g., sm, md, lg, xl) during development. Perfect for responsive design debugging in Next.js and React apps",
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "tailwind",
     "tailwindcss",
@@ -16,43 +23,29 @@
     "nextjs",
     "breakpoint",
     "debugger",
-    "responsive",
-    "screen size",
-    "tailwind breakpoints",
-    "devtool",
-    "tailwind helper",
-    "tailwind ui",
-    "react component",
-    "debug tool"
+    "responsive"
   ],
   "license": "MIT",
   "author": "Marko Sudar",
-  "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "tsup",
     "prepublishOnly": "npm run build",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "devDependencies": {
-    "@types/node": "^22.13.13",
-    "@types/react": "^19.0.12",
-    "@types/react-dom": "^19.0.4",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.17",
-    "tsup": "^8.4.0",
-    "typescript": "^5.8.2"
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "tailwindcss": "^3 || ^4",
-    "react-dom": "^19.0.0"
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0",
+    "tailwindcss": "^3.0.0 || ^4.0.0"
   },
   "repository": {
     "type": "git",
