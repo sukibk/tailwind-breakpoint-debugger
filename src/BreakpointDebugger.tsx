@@ -6,9 +6,9 @@ type BreakpointDebuggerProps = {
 
 const defaultBreakpoints = ["xs", "sm", "md", "lg", "xl", "2xl", "3xl", "4xl"];
 
-const BreakpointDebugger: React.FC<BreakpointDebuggerProps> = ({
+export default function BreakpointDebugger({
   breakpoints = defaultBreakpoints,
-}) => {
+}: BreakpointDebuggerProps) {
   const [mounted, setMounted] = useState(false);
   const [isDevelopment, setIsDevelopment] = useState(false);
 
@@ -55,6 +55,4 @@ const BreakpointDebugger: React.FC<BreakpointDebuggerProps> = ({
       )}
     </div>
   );
-};
-
-export default BreakpointDebugger;
+}
